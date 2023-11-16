@@ -28,27 +28,27 @@
 
 
 
-//ここから下にコードを書く
- $("#post_btn").on("click",function(){
-    // unameとtextareaの値を取得
-    const uname=$("#uname").val()
-    const textarea=$("#textarea").val()
+// //ここから下にコードを書く
+//  $("#post_btn").on("click",function(){
+//     // unameとtextareaの値を取得
+//     const uname=$("#uname").val()
+//     const textarea=$("#textarea").val()
 
-    console.log("unameの値を取得")
-    console.log("textareaの値を取得")
+//     console.log("unameの値を取得")
+//     console.log("textareaの値を取得")
 
-    // 該当idの値を初期化
-    $("#uname").val("")
-    $("#textarea").val("")
+//     // 該当idの値を初期化
+//     $("#uname").val("")
+//     $("#textarea").val("")
 
-    // 取得した値をobjへ代入
-    const obj={
-        uname:uname,
-        textarea:textarea,
-    }
+//     // 取得した値をobjへ代入
+//     const obj={
+//         uname:uname,
+//         textarea:textarea,
+//     }
 
-    // 「Firebaseのデータベースに新しい位置（ノード）を作成し、その位置にユーザーの名前とメッセージを保存する」という処理を行っている
-    const newPostRef=push(dbRef);//push(dbRef)は、Firebaseのデータベース内で新しい参照を作成。dbRefは、データベース内の特定の位置を指す参照
-    set(newPostRef,obj)//上記で作成したdbRefにobjをsetする
-})
+//     // 「Firebaseのデータベースに新しい位置（ノード）を作成し、その位置にユーザーの名前とメッセージを保存する」という処理を行っている
+//     const newPostRef=push(dbRef);//push(dbRef)は、Firebaseのデータベース内で新しい参照を作成。dbRefは、データベース内の特定の位置を指す参照
+//     set(newPostRef,obj)//上記で作成したdbRefにobjをsetする
+// })
 
